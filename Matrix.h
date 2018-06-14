@@ -174,7 +174,8 @@ public:
 	}
 
 	template <typename type, size_t M, size_tN>
-	istream& operator>>(istream& fin, Matrix<type, N, M>& m_matrix) {
+	istream& operator>>(istream& fin, Matrix<type, N, M>& m_matrix) 
+	{
 		if (fin.is_open()) 
 		{
 			type m_matrix.ptr = new type*[M];
